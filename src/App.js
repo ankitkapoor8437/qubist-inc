@@ -1,9 +1,12 @@
 import './App.css';
+import Navigation from './components/header/Navigation';
 
 function App() {
   return (
     <div className="App">
-      Qubist.Inc
+      <>
+      <Navigation />
+      </>
     </div>
   );
 }
