@@ -1,6 +1,6 @@
 import React from 'react'
-import "../../styles/Services.css"
-import serviceData from '../../../assets/data/servicesDetails'
+import "../styles/Services.css"
+import serviceData from '../../assets/data/servicesDetails'
 
 const Services = () => {
     return (

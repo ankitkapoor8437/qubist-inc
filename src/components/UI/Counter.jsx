@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/Counter.css'
-import counterData from '../../../assets/data/counterDetails'
+import '../styles/Counter.css'
+import counterData from '../../assets/data/counterDetails'
 
 const Counter = () => {
     return (

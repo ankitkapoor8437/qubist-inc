@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../styles/About.css'
-import aboutDetail from '../../../assets/data/aboutDetails';
+import '../styles/About.css'
+import aboutDetail from '../../assets/data/aboutDetails';
 
-import aboutImg from '../../../assets/images/about-us.jpg'
+import aboutImg from '../../assets/images/about-us.jpg'
 
 const About = () => {
     return (
