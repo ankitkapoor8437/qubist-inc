@@ -1,10 +1,39 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "../header/Navigation.css"
 import menuItem from '../../assets/data/navDetails'
 
 const Navigation = ({ theme, toggleTheme }) => {
+  const headerRef = useRef(null);
+
+  const headerFunc = () => {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      headerRef.current.classList.add("header__shrink")
+    }
+    else {
+      headerRef.current.classList.remove("header__shrink")
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", headerFunc);
+
+    return () => window.removeEventListener("scroll", headerFunc);
+  }, [])
+
+  const handleClick = (event) => {
+    event.preventDefault();
+
+    const targetAttr = event.target.getAttribute("href");
+    const location = document.querySelector(targetAttr).offsetTop;
+
+    window.scrollTo({
+      left: 0,
+      top: location - 80,
+    });
+  }
+
   return (
-    <header className='header'>
+    <header className='header' ref={headerRef}>
       <div className="container">
         <div className="nav_wrapper">
           <div className="logo">
@@ -15,9 +44,9 @@ const Navigation = ({ theme, toggleTheme }) => {
           {/* Navigation */}
           <div className="navigation">
             <ul className="menu">
-              {menuItem.map(({ display, path }) => (
-                <li className='menu_item'>
-                  <a href={path} className='menu_link'>
+              {menuItem.map(({ display, path, index }) => (
+                <li className='menu_item' key={index}>
+                  <a href={path} onClick={handleClick} className='menu_link'>
                     {display}
                   </a>
                 </li>

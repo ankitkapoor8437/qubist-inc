@@ -52,6 +52,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,6 +109,6 @@ section {
   font-weight: 500;
 }
 
-.light-theme .team__img{
+.light-theme .team__img {
   background: #ddd;
 }

@@ -8,7 +8,7 @@ import lightImage from '../../assets/images/light-hero-bg.jpg'
 
 const Hero = ({theme}) => {
     return (
-        <section className='hero__section'>
+        <section className='hero__section' id='hero'>
             <div className='container'>
                 <div className='hero__wrapper'>
                     <div className='hero__content'>
