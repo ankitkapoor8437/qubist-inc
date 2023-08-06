@@ -2,7 +2,7 @@ import React from 'react'
 import "../header/Navigation.css"
 import menuItem from '../../assets/data/navDetails'
 
-const Navigation = () => {
+const Navigation = ({ theme, toggleTheme }) => {
   return (
     <header className='header'>
       <div className="container">
@@ -27,8 +27,18 @@ const Navigation = () => {
 
           {/* Light Mode option */}
           <div className='light_mode'>
-            <span>
-              <i className='ri-sun-line'></i> Light Mode
+            <span onClick={toggleTheme}>
+              {
+                theme === "light-theme" ? (
+                  <span>
+                    <i className='ri-moon-line'></i>Dark
+                  </span>
+                ) : (
+                  <span>
+                    <i className='ri-sun-line'></i>Light
+                  </span>
+                )
+              }
             </span>
           </div>
         </div>

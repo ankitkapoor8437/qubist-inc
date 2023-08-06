@@ -6,13 +6,13 @@ import blogDetails from '../../assets/data/blogDetails'
 
 function Blog() {
     return (
-        <section>
+        <section id='#blog' className='Blog'>
             <div className='container'>
                 <div className='blog__top-content'>
                     <h6 className='subtitle'>Our Blog</h6>
                     <h2>
                         Let's have a look from our
-                        <span className='highlight'>recent blog</span>
+                        <span className='highlight'> recent blog</span>
                     </h2>
                 </div>
                 <div className='blog__wrapper'>

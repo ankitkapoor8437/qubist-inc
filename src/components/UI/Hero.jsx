@@ -3,9 +3,10 @@ import '../styles/Hero.css'
 
 // Imported Images
 import heroDarkImage from '../../assets/images/hero-img.png'
+import lightImage from '../../assets/images/light-hero-bg.jpg'
 
 
-const Hero = () => {
+const Hero = ({theme}) => {
     return (
         <section className='hero__section'>
             <div className='container'>
@@ -27,7 +28,7 @@ const Hero = () => {
                     </div>
 
                     <div className='hero__img'>
-                        <img src={heroDarkImage} alt="" />
+                        <img src={ theme=== "light-theme" ? lightImage : heroDarkImage} alt="" />
                     </div>
                 </div>
             </div>

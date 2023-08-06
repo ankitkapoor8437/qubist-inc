@@ -9,22 +9,34 @@ import Blog from './components/UI/Blog';
 import Testimonial from './components/UI/Testimonial';
 import Newsletter from './components/UI/Newsletter';
 import Footer from './components/UI/Footer';
+import { useEffect, useState } from 'react';
 
 
 function App() {
+  const [theme, setTheme] = useState('')
+
+  const toggleTheme = () => {
+    theme === '' ? setTheme('light-theme') : setTheme('')
+  }
+
+  useEffect(() => {
+    document.body.className = theme
+  }, [theme])
+
+
   return (
     <div className="App">
       <>
-      <Navigation />
-      <Hero />
-      <Counter />
-      <Services />
-      <About />
-      <Team />
-      <Blog />
-      <Testimonial />
-      <Newsletter />
-      <Footer />
+        <Navigation theme={theme} toggleTheme={toggleTheme} />
+        <Hero />
+        <Counter />
+        <Services />
+        <About />
+        <Team />
+        <Blog />
+        <Testimonial />
+        <Newsletter />
+        <Footer />
       </>
     </div>
   );

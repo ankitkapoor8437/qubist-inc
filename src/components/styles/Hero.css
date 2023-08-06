@@ -8,7 +8,12 @@
     width: 50%;
 }
 
-.hero__content{
+.hero__img img {
+    width: 100%;
+}
+
+
+.hero__content {
     padding-top: 40px;
 }
 
@@ -43,11 +48,11 @@
     cursor: pointer;
 }
 
-.primary__btn{
+.primary__btn {
     background: var(--btn-secondary-bg);
     border: 1px solid var(--btn-primary-bg);
 }
 
-.secondary__btn{
+.secondary__btn {
     background: var(--btn-primary-bg);
 }
