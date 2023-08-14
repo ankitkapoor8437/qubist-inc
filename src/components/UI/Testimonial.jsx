@@ -25,7 +25,7 @@ const Testimonial = () => {
                     <h6 className='subtitle'>Testimonials</h6>
                     <h2>
                         Trusted by more than{" "}
-                        <span className='highlight'>5,000 customers</span>
+                        <span className='highlight'>100+ customers</span>
                     </h2>
                 </div>
 
