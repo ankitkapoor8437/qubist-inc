@@ -7,7 +7,7 @@ const teamData = [
     {
         imgUrl: team01,
         name: "Ankit Kapoor",
-        position: "Product Developer"
+        position: "Product Development Manager"
     },
     {
         imgUrl: team02,
