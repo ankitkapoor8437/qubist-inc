@@ -12,7 +12,7 @@ const Team = () => {
                 </div>
                 <div className="team__wrapper">
                     {
-                        teamData.map(({ imgUrl, name, position }) => (
+                        teamData.map(({ imgUrl, name, position, linkedIn, instagram }) => (
                             <div className="team__item">
                                 <div className="team__img">
                                     <img src={imgUrl} alt="" />
@@ -23,10 +23,14 @@ const Team = () => {
 
                                     <div className="team__member-social">
                                         <span>
-                                            <i className="ri-linkedin-line"></i>
+                                            <a href={linkedIn}>
+                                                <i className="ri-linkedin-line"></i>
+                                            </a>
                                         </span>
                                         <span>
-                                            <i className="ri-twitter-line"></i>
+                                            <a href={instagram}>
+                                                <i className="ri-instagram-line"></i>
+                                            </a>
                                         </span>
                                     </div>
                                 </div>

@@ -7,17 +7,24 @@ const teamData = [
     {
         imgUrl: team01,
         name: "Ankit Kapoor",
-        position: "Product Development Manager"
+        position: "Product Development Manager",
+        linkedIn:"https://www.linkedin.com/in/ankit-kapoor-a72bb7152/",
+        instagram:"https://www.instagram.com/itsallaboutkapoor/"
+
     },
     {
         imgUrl: team02,
         name: "Avneet Singh Bara",
-        position: "Business Development Manager"
+        position: "Business Development Manager",
+        linkedIn:"https://www.linkedin.com/in/avneetsb/",
+        instagram:"https://www.instagram.com/explorerawh/"
     },
     {
         imgUrl: team03,
         name: "Proshangsa Chaudhary",
-        position: "Media And Graphic Design Intern"
+        position: "Media And Graphic Design Intern",
+        linkedIn:"https://www.linkedin.com/in/prashangsa-choudhury-950bb8201/",
+        instagram:"https://www.instagram.com/pro_shang_sa/"
     },
 ]
 

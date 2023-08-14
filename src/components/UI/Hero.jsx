@@ -20,7 +20,7 @@ const Hero = ({ theme }) => {
                         <p className='description'>
                             Crafting Digital Excellence, Amplifying Brands.
                             Your Vision, Our Innovation, Remarkable Results.
-                            Trust Qubist Inc to Transform Your Digital Landscape.
+                            Trust Qubist.Inc to Transform Your Digital Landscape.
                         </p>
                         <div className="hero__btns">
                             <button className='primary__btn'>Get Started Now</button>

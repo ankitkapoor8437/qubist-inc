@@ -12,7 +12,7 @@ const blogDetails = [
     {
         imgUrl:articleImg,
         title:"Articles",
-        desc:"Do you want to improve theway your brand interacts with customer? Let's talk....",
+        desc:"Do you want to improve the way your brand interacts with customer? Let's talk....",
         linkUrl:"#"
     },
     {

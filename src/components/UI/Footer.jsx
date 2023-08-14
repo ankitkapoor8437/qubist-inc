@@ -10,9 +10,9 @@ const Footer = () => {
                 <div className="footer__wrapper">
                     <div className="footer__logo">
                         <h2>Qubist.Inc</h2>
-                        <p className="description">Grow with us.</p>
+                        <p className="description">We make brands.</p>
                         <p className="small__text description">
-                            Crafting Digital Excellence, Amplifying Brands. Your Vision, Our Innovation, Remarkable Results. Trust Qubist Inc to Transform Your Digital Landscape.
+                            Crafting Digital Excellence, Amplifying Brands. Your Vision, Our Innovation, Remarkable Results. Trust Qubist.Inc to Transform Your Digital Landscape.
                         </p>
                     </div>
 
