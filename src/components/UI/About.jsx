@@ -14,9 +14,7 @@ const About = () => {
                         <h2>Specialist in aviding clients on</h2>
                         <h2 className='highlight'>financial challenges</h2>
                         <p className='description about__content-desc'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Excepturi doloribus optio corrupti enim expedita ratione odio
-                            ullam amet et sequi.
+                            With a deep understanding of financial challenges, we specialize in guiding clients through complex situations, ensuring they make informed decisions and achieve their goals.
                         </p>
                         <div className='choose__item-wrapper'>
 

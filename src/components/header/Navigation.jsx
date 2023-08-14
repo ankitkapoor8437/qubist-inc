@@ -37,7 +37,7 @@ const Navigation = ({ theme, toggleTheme }) => {
       <div className="container">
         <div className="nav_wrapper">
           <div className="logo">
-            <h2>Qubist.inc</h2>
+            <h2><a href="/">Qubist.inc</a></h2>
             {/* <p>Grow with us</p> */}
           </div>
 

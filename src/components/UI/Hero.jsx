@@ -6,7 +6,7 @@ import heroDarkImage from '../../assets/images/hero-img.png'
 import lightImage from '../../assets/images/light-hero-bg.jpg'
 
 
-const Hero = ({theme}) => {
+const Hero = ({ theme }) => {
     return (
         <section className='hero__section' id='hero'>
             <div className='container'>
@@ -18,8 +18,9 @@ const Hero = ({theme}) => {
                             <h2 className='highlight'>Promote Your Brand</h2>
                         </div>
                         <p className='description'>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Similique, quam. Ex, vero consequuntur. Et, placeat.
+                            Crafting Digital Excellence, Amplifying Brands.
+                            Your Vision, Our Innovation, Remarkable Results.
+                            Trust Qubist Inc to Transform Your Digital Landscape.
                         </p>
                         <div className="hero__btns">
                             <button className='primary__btn'>Get Started Now</button>
@@ -28,7 +29,7 @@ const Hero = ({theme}) => {
                     </div>
 
                     <div className='hero__img'>
-                        <img src={ theme=== "light-theme" ? lightImage : heroDarkImage} alt="" />
+                        <img src={theme === "light-theme" ? lightImage : heroDarkImage} alt="" />
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
     color: var(--link-active);
 }
 
-.logo h2 {
+.logo h2 a{
     color: var(--primary-color);
 }
 

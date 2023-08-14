@@ -11,18 +11,13 @@ const teamData = [
     },
     {
         imgUrl: team02,
-        name: "Ankit Kapoor",
-        position: "Product Developer"
+        name: "Avneet Singh Bara",
+        position: "Business Development Manager"
     },
     {
         imgUrl: team03,
-        name: "Ankit Kapoor",
-        position: "Product Developer"
-    },
-    {
-        imgUrl: team04,
-        name: "Ankit Kapoor",
-        position: "Product Developer"
+        name: "Proshangsa Chaudhary",
+        position: "Media And Graphic Design Intern"
     },
 ]
 

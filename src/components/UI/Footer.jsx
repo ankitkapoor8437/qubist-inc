@@ -12,9 +12,7 @@ const Footer = () => {
                         <h2>Qubist.Inc</h2>
                         <p className="description">Grow with us.</p>
                         <p className="small__text description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Veritatis velit non vero dolorem asperiores nobis sed nostrum.
-                            Temporibus excepturi, ipsam sed officia veritatis mollitia.
+                            Crafting Digital Excellence, Amplifying Brands. Your Vision, Our Innovation, Remarkable Results. Trust Qubist Inc to Transform Your Digital Landscape.
                         </p>
                     </div>
 
