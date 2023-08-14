@@ -22,7 +22,7 @@ const Newsletter = () => {
                             Subscribe Now
                         </button>
                     </div>
-
+                
                 </div>
             </div>
         </section>

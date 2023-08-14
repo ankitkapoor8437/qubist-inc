@@ -21,7 +21,7 @@ const teamData = [
     },
     {
         imgUrl: team03,
-        name: "Proshangsa Chaudhary",
+        name: "Prashangsa Chaudhary",
         position: "Media And Graphic Design Intern",
         linkedIn:"https://www.linkedin.com/in/prashangsa-choudhury-950bb8201/",
         instagram:"https://www.instagram.com/pro_shang_sa/"
