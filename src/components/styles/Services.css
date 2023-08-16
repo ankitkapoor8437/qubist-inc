@@ -1,8 +1,10 @@
+/* Top content of services section */
 .services_top-content {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Container for service items */
 .service__item-wrapper {
     display: flex;
     align-items: center;
@@ -10,6 +12,7 @@
     column-gap: 2rem;
 }
 
+/* Individual service item */
 .services__item {
     background: var(--card-bg);
     width: 25%;
@@ -19,6 +22,7 @@
     cursor: pointer;
 }
 
+/* Icon within a service item */
 .service__icon {
     width: 60px;
     height: 60px;
@@ -33,24 +37,54 @@
     cursor: pointer;
 }
 
+/* Light theme style for service icon */
 .light-theme .service__icon {
     background-color: var(--primary-color);
 }
 
-.light-theme .service__icon i{
+.light-theme .service__icon i {
     color: #fff;
 }
 
-
-
-
+/* Icon's inner element */
 .service__icon i {
     font-size: 2rem;
     color: var(--primary-color);
 }
 
+/* Title of the service item */
 .service__title {
     color: var(--primary-color);
     font-size: 1.3rem;
     margin-bottom: 30px;
+}
+
+/* Responsive Design for medium screens (up to 992px) */
+@media only screen and (max-width: 992px) {
+    .services_top-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .service__item-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .services__item {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive Design for small screens (up to 768px) */
+@media only screen and (max-width: 768px) {
+    .services__item {
+        width: 47.7%;
+    }
+}
+
+/* Responsive Design for extra small screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .services__item {
+        width: 100%;
+    }
 }

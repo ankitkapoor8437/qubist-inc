@@ -1,36 +1,43 @@
+/* Hero section wrapper */
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
 }
 
+/* Splitting the content and image in half */
 .hero__content,
 .hero_img {
     width: 50%;
 }
 
+/* Setting image width to 100% */
 .hero__img img {
     width: 100%;
 }
 
-
+/* Styling for the hero content */
 .hero__content {
     padding-top: 40px;
 }
 
+/* Styling for the hero content's heading */
 .hero__content h2 {
     font-size: 3rem;
     line-height: 65px;
 }
 
+/* Styling for the hero content's paragraph */
 .hero__content p {
     margin-top: 40px;
     font-size: 1.1rem;
 }
 
+/* Styling for highlighted text */
 .highlight {
     color: var(--primary-color);
 }
 
+/* Styling for the hero buttons container */
 .hero__btns {
     margin-top: 40px;
     display: flex;
@@ -38,6 +45,7 @@
     column-gap: 2rem;
 }
 
+/* Styling for primary and secondary buttons */
 .primary__btn,
 .secondary__btn {
     padding: 0.8rem 1.5rem;
@@ -48,45 +56,52 @@
     cursor: pointer;
 }
 
+/* Styling for primary button */
 .primary__btn {
     background: var(--btn-secondary-bg);
     border: 1px solid var(--btn-primary-bg);
 }
 
+/* Styling for secondary button */
 .secondary__btn {
     background: var(--btn-primary-bg);
 }
 
-/* Responsive Code */
-@media only screen and (max-width:992px) {
+/* Responsive Design for medium screens (up to 992px) */
+@media only screen and (max-width: 992px) {
+    /* Adjusting heading size and line height */
     .hero__content h2 {
         font-size: 1.5rem;
         line-height: 45px;
     }
 
+    /* Adjusting content font size */
     .hero__content {
         font-size: 0.9rem;
     }
 
+    /* Adjusting button font size */
     .primary__btn,
     .secondary__btn {
         font-size: 0.8rem;
     }
 
+    /* Adjusting content and image width */
     .hero__content,
     .hero__img {
         width: 100%;
     }
 }
 
-
+/* Responsive Design for small screens (up to 600px) */
 @media only screen and (max-width: 600px) {
-
+    /* Adjusting content and image width */
     .hero__content,
     .hero__img {
         width: 100%;
     }
 
+    /* Adjusting layout to a column */
     .hero__wrapper {
         flex-direction: column;
     }
