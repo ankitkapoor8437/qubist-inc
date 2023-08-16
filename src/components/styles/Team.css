@@ -1,18 +1,22 @@
-.our__team{
+/* Our Team Section Styles */
+.our__team {
     padding-top: 0;
 }
 
+/* Team Content Styles */
 .team__content {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Team Member Item Styles */
 .team__item {
     width: 25%;
     background: var(--team-card-bg);
     border-radius: 5px;
 }
 
+/* Team Member Image Container Styles */
 .team__img {
     width: 100%;
     height: 250px;
@@ -22,6 +26,7 @@
     padding-top: 10px;
 }
 
+/* Team Member Image Styles */
 .team__img img {
     width: 100%;
     height: 170%;
@@ -29,10 +34,12 @@
     transform: scale(1.1);
 }
 
+/* Team Member Details Container Styles */
 .team__details {
     padding: 20px 15px;
 }
 
+/* Team Member Name Styles */
 .team__details h4 {
     color: var(--primary-color);
     font-weight: 500;
@@ -40,6 +47,7 @@
     margin-bottom: 0.4rem;
 }
 
+/* Team Member Social Icons Container Styles */
 .team__member-social {
     display: flex;
     align-items: center;
@@ -47,6 +55,7 @@
     margin-top: 5px;
 }
 
+/* Team Member Social Icon Styles */
 .team__member-social span i {
     padding: 5px;
     background: var(--icon-bg);
@@ -54,9 +63,49 @@
     border-radius: 3px;
 }
 
+/* Team Wrapper Styles */
 .team__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 2rem;
+}
+
+/* Responsive Design for Tablets */
+@media only screen and (max-width: 768px) {
+    /* Adjust team member item width and margin */
+    .team__item {
+        width: 47%;
+        margin-bottom: 10%;
+    }
+
+    /* Adjust team wrapper for smaller screens */
+    .team__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Adjust font size for team content */
+    .team__content h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust font size for team member details */
+    .team__details h4 {
+        font-size: 1rem;
+    }
+
+    /* Adjust font size for team member details description */
+    .team__details p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive Design for Mobiles */
+@media only screen and (max-width: 576px) {
+    /* Adjust team member item width and margin */
+    .team__item {
+        width: 100%;
+        margin-bottom: 10%;
+    }
 }

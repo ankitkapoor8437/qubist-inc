@@ -80,6 +80,10 @@
     .services__item {
         width: 47.7%;
     }
+
+    .service__title {
+        font-size: 1.2rem;
+    }
 }
 
 /* Responsive Design for extra small screens (up to 576px) */
