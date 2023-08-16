@@ -4,6 +4,7 @@ import menuItem from '../../assets/data/navDetails'
 
 const Navigation = ({ theme, toggleTheme }) => {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
 
   const headerFunc = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -29,9 +30,14 @@ const Navigation = ({ theme, toggleTheme }) => {
     window.scrollTo({
       left: 0,
       top: location - 80,
+      behavior: "smooth", // Added smooth scrolling behavior
+
     });
   }
 
+  const toggleMenu = () => {
+    menuRef.current.classList.toggle('menu__active');
+  };
   return (
     <header className='header' ref={headerRef}>
       <div className="container">
@@ -42,7 +48,7 @@ const Navigation = ({ theme, toggleTheme }) => {
           </div>
 
           {/* Navigation */}
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}  >
             <ul className="menu">
               {menuItem.map(({ display, path, index }) => (
                 <li className='menu_item' key={index}>
@@ -60,16 +66,21 @@ const Navigation = ({ theme, toggleTheme }) => {
               {
                 theme === "light-theme" ? (
                   <span>
-                    <i className='ri-moon-line'></i>Dark
+                    <i className='ri-moon-line'> Dark</i>
                   </span>
                 ) : (
                   <span>
-                    <i className='ri-sun-line'></i>Light
+                    <i className='ri-sun-line'> Light</i>
                   </span>
                 )
               }
             </span>
           </div>
+
+          <span className='mobile__menu' onClick={toggleMenu}>
+            <i className='ri-menu-line'></i>
+          </span>
+
         </div>
       </div>
     </header>
